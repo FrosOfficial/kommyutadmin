@@ -1,0 +1,22 @@
+{
+  "name": "kommyut-admin-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for Kommyut Admin Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
