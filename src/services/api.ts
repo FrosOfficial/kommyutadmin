@@ -103,27 +103,6 @@ export const analyticsAPI = {
   }
 }
 
-// System Monitoring API
-export const monitoringAPI = {
-  // Get system health metrics
-  getSystemHealth: async (): Promise<ApiResponse<SystemHealth>> => {
-    const response = await api.get('/monitoring/health')
-    return response.data
-  },
-
-  // Get API logs
-  getApiLogs: async (params?: { limit?: number; level?: 'info' | 'warn' | 'error' }): Promise<ApiResponse<any[]>> => {
-    const response = await api.get('/monitoring/logs', { params })
-    return response.data
-  },
-
-  // Get database metrics
-  getDatabaseMetrics: async (): Promise<ApiResponse<any>> => {
-    const response = await api.get('/monitoring/database')
-    return response.data
-  }
-}
-
 // Notification API
 export const notificationAPI = {
   // Send push notification
